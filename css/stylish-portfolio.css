@@ -88,13 +88,12 @@ h6 {
 
 .masthead {
   min-height: 30rem;
-  position: absolute;
+  position: relative;
   display: table;
   width: 100%;
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  opacity: .2
   background: url("../img/bg-masthead.jpg");
   background-position: center center;
   background-repeat: no-repeat;
