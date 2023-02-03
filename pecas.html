@@ -21,36 +21,126 @@
   <!-- Custom CSS -->
   <link href="css/stylish-portfolio.min.css" rel="stylesheet">
 
+
+  <style>
+    .collapsible {
+      background-color: #777;
+      color: white;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+    
+    .active, .collapsible:hover {
+      background-color: #555;
+    }
+    
+    .collapsible:after {
+      content: '\002B';
+      color: white;
+      font-weight: bold;
+      float: right;
+      margin-left: 5px;
+    }
+    
+    .active:after {
+      content: "\2212";
+    }
+    
+    .content {
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      background-color: #f1f1f1;
+    }
+
+    figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 250px;
+    margin: auto;
+}
+
+img {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    font-size: 20px;
+    padding: 3px;
+    text-align: center;
+}
+    </style>
+
 </head>
 
 <body id="page-top" >
 
 
-   <section class="content-section bg-secondary text-white  text-justify">
+   <section class="content-section bg-light text-black  text-justify">
     <h1 class="mb-5 text-center">Principais Peças</h1>
      <div class="row">
-      <div class="col-lg-1 col-md-6 mb-5 mb-lg-0">
+      <div class="col-md-10 mx-auto">
         </div>
-        <div class="col-lg-10 col-md-1 mb-5 mb-md-0">
-          <p class="lead mb-5" style="font-size:25px;font-weight:500">Antes de mais nada, um bom primeiro passo seria conhecer as principais peças de alguns aparelhos eletrônicos, não é mesmo? Por isso que abaixo você encontrará o nome das principais peças e em quais aparelhos elas podem ser achadas.
-      Lembrando que esse conteúdo é encontrado de forma mais aprofundada no manual didático que está sendo disponibilizado na última subpágina, basta apenas clicar e você terá acesso!</p>
-  </div>
+        <div class="col-md-10 mx-auto">
+          <p class="lead mb-5" style="font-size:25px;font-weight:500">Antes de mais nada, um bom primeiro passo seria conhecer as principais peças de alguns aparelhos eletrônicos, não é mesmo? Por isso que abaixo você encontrará o nome das principais peças e em quais aparelhos elas podem ser achadas.</p>
+           <p class="lead mb-5" style="font-size:25px;font-weight:500">Lembrando que esse conteúdo é encontrado de forma mais aprofundada no manual didático que está sendo disponibilizado na última subpágina, basta apenas clicar e você terá acesso!</p>        
+          </div>
 
+  </div>
+  
+    <div class="container text-center" style="margin-bottom: 1cm;">
+      <div class="row">
+        <div class="col-md-10 mx-auto">
+<button class="collapsible" style="font-size:25px;font-weight:500">MONITOR</button>
+<div class="content">
+  <ul class="fa-ul" style="font-size:20px;font-weight:500; text-align:left;">
+    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Peça essencial para o uso do computador. É nele que observamos a resposta do computador a nossos comandos.</li>
+    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>A maioria dos computadores &#8212; e outros eletrônicos &#8212;  utiliza a mesma saída de vídeo (HDMI), então seu monitor pode ser reaproveitado com outro propósito</li>
+  </ul>
+    <div style="text-align:center; margin-bottom: 0.2cm">
+    <img src="img/monitor.png" alt="Monitor" style="width:250px;height:250px;" >
+    <figcaption>Exemplo de monitor</figcaption>
+  </div>
+  
+</div>
+<button class="collapsible"style="font-size:25px;font-weight:500">HD OU DISCO RÍGIDO</button>
+<div class="content">
+</div>
+<button class="collapsible"style="font-size:25px;font-weight:500">MEMÓRIA RAM</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+        </div>
+      </div>
+    </div>
+
+     <div class="row">
+      <div class="col-md-10 mx-auto">
+        </div>
+        <div class="col-md-10 mx-auto">
+          <p class="lead mb-5" style="font-size:25px;font-weight:500">Agora você tem uma ideia geral sobre as principais peças que compõem um computador e como é possível reutilizá-las.</p>        
+          </div>
   <div class="container text-center">
      <a class="btn btn-secondary btn-xl js-scroll-trigger" href="index.html" >Voltar</a>
 
-  </div>
   </section>
-
-
-  </div>
-  </section>
-
   <!-- Footer -->
-   <footer class="footer text-center">
+  <footer class="footer text-center" style="margin-top:-1cm ;margin-bottom:-1cm">
     <div class="container">
-      <img src="logo.png" class="img-responsive" width=200 height=100 align="center" >
-       <p class="text-muted small mb-0">Copyright &copy; eletrodescarte.github.io 2022
+      <img src="eletro descarte.png" class="img-responsive" width=120 height=120 align="center" >
+       <p class="text-muted small mb-0" style="margin-top: 0.5cm;">Copyright &copy; eletrodescarte.github.io 2023
       </p>
     </div>
   </footer>
@@ -66,6 +156,24 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/stylish-portfolio.min.js"></script>
+
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
 
 </body>
 
